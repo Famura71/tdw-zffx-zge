@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Brand Insights Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <main class="content">
+            <header>
+                <h1>Admin Panel</h1> 
+                <div class="button-group">
+                    <button id="btnUpdate" class="btn btn-update">Refresh Data</button>
+                    <button id="btnAdd" class="btn btn-add">New Entry</button>
+                    <button id="btnDelete" class="btn btn-delete">Remove Entry</button>
+                </div>
+            </header>
+
+            <div class="dashboard-grid">
+                <div class="card chart-card">
+                    <h3>Vehicle Brand Distribution</h3> <div class="chart-wrapper">
+                        <canvas id="carBrandChart"></canvas>
+                    </div>
+                </div>
+
+                <div class="card info-card">
+                    <h3>Brand Inventory Details</h3> <ul id="brand-list">
+                        <li>BMW: <span id="count-BMW">--</span></li>
+                        <li>Mercedes: <span id="count-MERCEDES">--</span></li>
+                        <li>Toyota: <span id="count-TOYOTA">--</span></li>
+                        <li>Tesla: <span id="count-TESLA">--</span></li>
+                        <li>Honda: <span id="count-HONDA">--</span></li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="view.js"></script>
+</body>
+</html>
