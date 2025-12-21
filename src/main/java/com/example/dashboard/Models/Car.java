@@ -3,12 +3,10 @@ package com.example.dashboard.Models;
 public class Car {
 private String id;
 private Brand brand;
-private String modelName;
 
-public Car(String id,Brand brand,String modelName){
+public Car(String id,Brand brand){
     this.id=id;
     this.brand=brand;
-    this.modelName=modelName;
 
 }
 
@@ -18,9 +16,5 @@ public Car(String id,Brand brand,String modelName){
 
     public Brand getBrand() {
         return brand;
-    }
-
-    public String getModelName() {
-        return modelName;
     }
 }
